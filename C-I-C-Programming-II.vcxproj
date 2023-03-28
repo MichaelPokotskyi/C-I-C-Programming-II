@@ -127,7 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TODO.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\ARC_M\C2_170379_U09662201_Requirements\Assignment 1\C2A1E1_main-Driver.c" />
+    <ClCompile Include="C2A1E1_Macros.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

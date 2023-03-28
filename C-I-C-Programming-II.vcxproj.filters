@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TODO.cpp">
+    <ClCompile Include="C2A1E1_Macros.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\ARC_M\C2_170379_U09662201_Requirements\Assignment 1\C2A1E1_main-Driver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
