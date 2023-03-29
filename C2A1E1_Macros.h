@@ -11,7 +11,7 @@
 // Assignment #1 C2A1E1 (C)
 // Set of function like macroses 
 // whose values are product, negate and array length.
-
+/*
 // Include guard to avoid multiple includes
 #ifndef C2A1E1_MACROS_H
 #define C2A1E1_MACROS_H
@@ -22,3 +22,4 @@
 // Array length
 #define Elements(A) (sizeof(A)/sizeof((A)[0]))
 #endif // C2A1E1_MACROS_H
+*/
