@@ -20,5 +20,5 @@
 // Negate
 #define Negate(A) (-(A))
 // Array length
-#define Elements(A) (sizeof(A)/sizeof(A[0]))
+#define Elements(A) (sizeof(A)/sizeof((A)[0]))
 #endif // C2A1E1_MACROS_H
