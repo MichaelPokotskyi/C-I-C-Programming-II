@@ -19,7 +19,7 @@
 size_t StrToUpper(char destination[], const char source[]) {
     const char *ch = 0;
     while (*destination++ = (char)toupper(*source++))
-        //count characters
+        // here might be restriction violation
         ch++;
     return (size_t)ch;
 }
