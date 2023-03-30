@@ -1,4 +1,5 @@
-#define INSTRUCTOR_FILE    // DO NOT DEFINE THIS MACRO IN ANY FILES YOU CREATE
+/* #define INSTRUCTOR_FILE */
+// DO NOT DEFINE THIS MACRO IN ANY FILES YOU CREATE
 
 /***  YOU DO NOT NEED TO UNDERSTAND THE CODE IN THIS FILE TO WRITE YOURS  ***/
 
@@ -13,7 +14,7 @@
 // technique, proper formatting/style, or meet the requirements your code must
 // meet.  You do not need to understand the code in this file to write yours.
 //****************************************************************************
-
+/*
 #ifdef INSTRUCTOR_FILE
 #include <stdio.h>
 
@@ -65,3 +66,4 @@ int main(void)
    return 0;
 }
 #endif
+*/

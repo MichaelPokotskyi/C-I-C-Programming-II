@@ -32,5 +32,11 @@
     <ClCompile Include="C2A1E3_FindFirstInt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A1E4_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A1E4_ StrToUpper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

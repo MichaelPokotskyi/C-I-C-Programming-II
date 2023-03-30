@@ -12,7 +12,7 @@
 // FindFirstInt find the first occurrence of the value
 // represented by value in the array represented ptr. If the value is found
 // a pointer to that element is returned. Otherwise, a null pointer is returned.
-
+/*
 #include <stdio.h>
 
 int *FindFirstInt(const int *ptr, size_t count, int value) {
@@ -29,3 +29,4 @@ int *FindFirstInt(const int *ptr, size_t count, int value) {
     //if not found
     return NULL;
 }
+*/
