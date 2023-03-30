@@ -28,6 +28,8 @@
     <ClCompile Include="C2A1E3_main-Driver.c" />
     <ClCompile Include="C2A1E4_StrToUpper.c" />
     <ClCompile Include="C2A1E4_main-Driver.c" />
+    <ClCompile Include="C2A1E5_main-Driver.c" />
+    <ClCompile Include="C2A1E5_ResizeAlloc.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

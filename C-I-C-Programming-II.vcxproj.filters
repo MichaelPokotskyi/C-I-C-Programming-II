@@ -38,5 +38,11 @@
     <ClCompile Include="C2A1E4_StrToUpper.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A1E5_ResizeAlloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A1E5_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
