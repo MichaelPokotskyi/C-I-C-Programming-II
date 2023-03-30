@@ -9,13 +9,17 @@
 // Visual C++ 2022, ISO C17
 //
 // Assignment #1 C2A1E4 (C)
-//
+// StrToUpper copy the string represented by its second parameter into the
+// memory represented by its first parameter, with any lowercase
+// characters converted to uppercase.
 
 #include <stdio.h>
+#include <ctype.h>
 
 size_t StrToUpper(char destination[], const char source[]) {
-    const char *ch = source;
-    while (*destination++ = toupper(*source++))
-        ;
-    return *ch;
+    const char *ch = 0;
+    while (*destination++ = (char)toupper(*source++))
+        //count characters
+        ch++;
+    return (size_t)ch;
 }
