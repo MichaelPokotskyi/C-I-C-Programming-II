@@ -9,17 +9,18 @@
 // Visual C++ 2022, ISO C17
 //
 // Assignment #1 C2A1E2 (C)
+// Function main counting and printing out 
+// command line arguments
 
 #include <stdio.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-    printf("%d", argc);
-    printf("\n");
-    for (int count = 0; count < argc; count ++) 
+    printf("%d\n", argc);
+    //loop iterating arguments
+    for (int count = 0; count < argc; count++)
     {
-        printf(argv[count]);
-        printf("\n");
+        printf("%s\n", argv[count]);
     }
     return 0;
 }
