@@ -11,7 +11,7 @@
 // Assignment #1 C2A1E2 (C)
 // Function main counting and printing out 
 // command line arguments
-
+/*
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -24,3 +24,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+*/
