@@ -31,6 +31,9 @@
     <ClCompile Include="C2A1E5_main-Driver.c" />
     <ClCompile Include="C2A1E5_ResizeAlloc.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="C2A1E0_Quiz.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
