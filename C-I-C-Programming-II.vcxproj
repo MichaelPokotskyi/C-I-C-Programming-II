@@ -26,7 +26,7 @@
     <ClCompile Include="C2A1E2_main.c" />
     <ClCompile Include="C2A1E3_FindFirstInt.c" />
     <ClCompile Include="C2A1E3_main-Driver.c" />
-    <ClCompile Include="C2A1E4_ StrToUpper.c" />
+    <ClCompile Include="C2A1E4_StrToUpper.c" />
     <ClCompile Include="C2A1E4_main-Driver.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
