@@ -14,33 +14,34 @@
 // existing block.
 
 #include <stdio.h>
-#include <malloc.h>
 #include <string.h>
 
-void* ResizeAlloc(void* pOld, size_t newSize, size_t oldSize) {
-    //Declare pointer to new block
-    void* new;
+void *ResizeAlloc(void *pOld, size_t newSize, size_t oldSize) {
+    // Declare pointer to new block
+    void *pNew;
     if (newSize == 0) {
         return NULL;
     }
     else {
-        if ((new = malloc(newSize)) == NULL) {
+        // Allocation + allocation fail tesing
+        if ((pNew = malloc(newSize)) == NULL) {
             return NULL;
         }
         else {
             if (pOld == NULL) {
-                return new;
+                return pNew;
             }
             else {
+                // Resizing and copying data
                 if (newSize > oldSize) {
-                    memcpy(new, pOld, oldSize);
+                    memcpy(pNew, pOld, oldSize);
                 }
                 else {
-                    memcpy(new, pOld, newSize);
+                    memcpy(pNew, pOld, newSize);
                 }
             }
         }
     }
     free(pOld);
-    return new;
+    return pNew;
 }
