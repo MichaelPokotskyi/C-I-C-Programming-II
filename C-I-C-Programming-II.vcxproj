@@ -30,6 +30,8 @@
     <ClCompile Include="C2A1E4_main-Driver.c" />
     <ClCompile Include="C2A1E5_main-Driver.c" />
     <ClCompile Include="C2A1E5_ResizeAlloc.c" />
+    <ClCompile Include="C2A1E6_AppendFile.cpp" />
+    <ClCompile Include="C2A1E6_main-Driver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt" />
