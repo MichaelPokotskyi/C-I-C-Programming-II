@@ -9,7 +9,9 @@
 // Visual C++ 2022, ISO C17
 //
 // Assignment #1 C2A1E5 (C)
-// 
+// ResizeAlloc either dynamically allocates an entirely new
+// block of memory containing newSize bytes or, resizes an
+// existing block.
 
 #include <stdio.h>
 #include <malloc.h>
