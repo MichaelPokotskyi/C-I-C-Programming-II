@@ -25,7 +25,7 @@ void* ResizeAlloc(void* pOld, size_t newSize, size_t oldSize) {
         if ((new = malloc(newSize)) == NULL) {
             return NULL;
         }
-        else{
+        else {
             if (pOld == NULL) {
                 return new;
             }
