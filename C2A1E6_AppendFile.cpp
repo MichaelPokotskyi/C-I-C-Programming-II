@@ -33,7 +33,6 @@ int AppendFile(const char* inFile, const char* outFile)
         return -1;
         //exit(EXIT_FAILURE);
     }
-
     for (;;) 
     {
         char buf[READ_BUF];
@@ -45,7 +44,6 @@ int AppendFile(const char* inFile, const char* outFile)
         }
         outputFile.write(buf, bytes);
     }
-
     inputFile.close();
     outputFile.close();
     return 0;
