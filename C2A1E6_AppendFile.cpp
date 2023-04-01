@@ -37,7 +37,7 @@ int AppendFile(const char* inFile, const char* outFile)
     {
         char buf[READ_BUF];
         inputFile.read(buf, sizeof(buf));
-        streamsize bytes = inputFile.gcount();
+        //streamsize bytes = inputFile.gcount();
         if (bytes == 0) 
         {
             break;
