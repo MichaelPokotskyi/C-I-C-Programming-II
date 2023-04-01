@@ -7,43 +7,44 @@
 // C2A1E6_AppendFile.cpp
 // Win10
 // Visual C++ 2022, ISO C++ 17
-// 
+// AppendFile open files in binary mode and append data 
+// from input file to output file. If an open fails the function 
+// output an error message to cerr, and return -1.
 
 #include <iostream>
 #include <fstream>
-//#include <cstdlib>
 const int READ_BUF = 256;
 using namespace std;
 
 int AppendFile(const char* inFile, const char* outFile) 
 {
-    // Open and test the input file.
+    // Open and test input file, message + -1 if fail.
     ifstream inputFile(inFile, ios_base::binary);
     if (!inputFile.is_open())
     {
         cerr << "Open failed: " << inFile << "\n";
         return -1;
-        //exit(EXIT_FAILURE);
     }
-    // Open and test the output file.
+    // Open to append and test output file, message + -1 if fail.
     ofstream outputFile(outFile, ios_base::binary | ios_base::app);
     if (!outputFile.is_open())
     {
         cerr << "Open failed: " << outFile << "\n";
         return -1;
-        //exit(EXIT_FAILURE);
     }
     for (;;) 
     {
+        // copying data into file by read buffer length
         char buf[READ_BUF];
         inputFile.read(buf, sizeof(buf));
-        //streamsize bytes = inputFile.gcount();
+        streamsize bytes = inputFile.gcount();
         if (bytes == 0) 
         {
             break;
         }
         outputFile.write(buf, bytes);
     }
+    // close all and return success zer0
     inputFile.close();
     outputFile.close();
     return 0;
