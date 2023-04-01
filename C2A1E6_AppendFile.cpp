@@ -12,7 +12,7 @@
 #include <iostream>
 #include <fstream>
 //#include <cstdlib>
-
+const int READ_BUF = 256;
 using namespace std;
 
 int AppendFile(const char* inFile, const char* outFile) 
@@ -26,12 +26,24 @@ int AppendFile(const char* inFile, const char* outFile)
         //exit(EXIT_FAILURE);
     }
     // Open and test the output file.
-    ofstream outputFile(outFile, ios_base::binary | ios_base::trunc);
+    ofstream outputFile(outFile, ios_base::binary | ios_base::app);
     if (!outputFile.is_open())
     {
         cerr << "Open failed: " << outFile << "\n";
         return -1;
         //exit(EXIT_FAILURE);
+    }
+
+    for (;;) 
+    {
+        char buf[READ_BUF];
+        inputFile.read(buf, sizeof(buf));
+        streamsize bytes = inputFile.gcount();
+        if (bytes == 0) 
+        {
+            break;
+        }
+        outputFile.write(buf, bytes);
     }
 
     inputFile.close();
