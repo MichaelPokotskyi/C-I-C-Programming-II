@@ -16,7 +16,7 @@
 const int READ_BUF = 256;
 using namespace std;
 
-int AppendFile(const char* inFile, const char* outFile) 
+int AppendFile(const char *inFile, const char *outFile)
 {
     // Open and test input file, message + -1 if fail.
     ifstream inputFile(inFile, ios_base::binary);
@@ -34,12 +34,13 @@ int AppendFile(const char* inFile, const char* outFile)
     }
     for (;;) 
     {
-        // copying data into file by read buffer length
+        // copying data into file by reading buffer length
         char buf[READ_BUF];
         inputFile.read(buf, sizeof(buf));
         streamsize bytes = inputFile.gcount();
         if (bytes == 0) 
         {
+            outputFile.close();
             break;
         }
         outputFile.write(buf, bytes);
