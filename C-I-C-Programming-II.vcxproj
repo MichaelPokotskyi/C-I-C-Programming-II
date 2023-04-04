@@ -35,6 +35,8 @@
     <ClCompile Include="C2A1E6_main-Driver.cpp" />
     <ClCompile Include="C2A1E7_Employee.cpp" />
     <ClCompile Include="C2A1E7_main-Driver.cpp" />
+    <ClCompile Include="__TEST_Source_C++.cpp" />
+    <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt" />
