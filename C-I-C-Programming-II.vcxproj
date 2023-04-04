@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C2A1E1_Macros.h" />
+    <ClInclude Include="C2A1E7_Employee.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c" />
@@ -32,6 +33,8 @@
     <ClCompile Include="C2A1E5_ResizeAlloc.c" />
     <ClCompile Include="C2A1E6_AppendFile.cpp" />
     <ClCompile Include="C2A1E6_main-Driver.cpp" />
+    <ClCompile Include="C2A1E7_Employee.cpp" />
+    <ClCompile Include="C2A1E7_main-Driver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt" />
