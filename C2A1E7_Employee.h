@@ -49,7 +49,7 @@ public:
         return (float &)raise;
     }
 };
-//outside 
+//implemented outside the class definition
 inline double Employee::Get(double *salary) const {
     *salary = salary_;
     return *salary;
