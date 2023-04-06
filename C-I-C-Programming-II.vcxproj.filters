@@ -68,10 +68,10 @@
     <ClCompile Include="__TEST_Source_C++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C2A2E1_CountIntBitsF.c">
+    <ClCompile Include="C2A2E1_main-Driver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C2A2E1_main-Driver.c">
+    <ClCompile Include="C2A2E1_CountIntBitsF.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

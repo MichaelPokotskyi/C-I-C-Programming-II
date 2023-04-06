@@ -12,11 +12,11 @@
 // Determines the number of bits of storage used for the data type 
 // of objectOrType on any machine on which it is run.
 
-#include <limits.h>
 // Include guard to avoid multiple includes
 #ifndef C2A2E1_COUNTBITSM_H
-#define C2A1E1_COUNTBITSM_H
+#define C2A2E1_COUNTBITSM_H
 
-#define CountBitsM(objectOrType) ((sizeof(objectOrType)) * (CHAR_BIT))
+#include <limits.h>
+#define CountBitsM(objectOrType) (((int)sizeof(objectOrType)) * CHAR_BIT)
 
 #endif // C2A2E1_COUNTBITSM_H
