@@ -21,6 +21,9 @@
     <ClInclude Include="C2A1E7_Employee.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A2E1_CountBitsM.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -63,6 +66,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="__TEST_Source_C++.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A2E1_CountIntBitsF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A2E1_main-Driver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

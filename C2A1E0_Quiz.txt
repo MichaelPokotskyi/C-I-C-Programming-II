@@ -1,18 +1,18 @@
 Michael Pokotskyi U09662201
 pokotskyi.m@gmail.com
 C I C++ Programming II
-C1 170379 Raymond L. Mitchell
+C2 170379 Raymond L. Mitchell
 3/28/2023
 C2A1E0_Quiz.txt
 
 Assignment #1 quiz answers
-1.
+1.E
 2.B
 3.A
-4.
+4.B
 5.B
 6.A
-7.
+7.C
 8.D
-9.
+9.A
 10.B
