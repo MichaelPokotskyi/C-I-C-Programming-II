@@ -74,6 +74,15 @@
     <ClCompile Include="C2A2E1_CountIntBitsF.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A2E2_CountIntBitsF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A2E2_main-Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A2E2_Rotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">
