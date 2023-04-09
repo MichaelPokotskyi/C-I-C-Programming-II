@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt" />
+    <Text Include="C2A2E3_StackDiagram.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

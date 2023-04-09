@@ -9,7 +9,7 @@
 //// Visual C++ 2022, ISO C17
 ////
 //// Assignment #2 C2A2E1 (C)
-//// Determines the number of bits used to represent a type int value 
+//// Determines the number of bits used to represent a type unsigned int value 
 //// on any machine on which it is run.
 //
 //// The value produced on the same implementation from two 

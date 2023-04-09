@@ -1,0 +1,42 @@
+Michael Pokotskyi U09662201
+pokotskyi.m@gmail.com
+C/C++ Programming II
+Section 170379 Raymond L. Mitchell
+3/28/2023
+C2A2E3_StackDiagram.txt
+Recursive Stack Diagram
+
+Rel      Abs   Stack           Description         Item
+Adr      Adr   Value                               Size
+------------------------ startup -------------------------
+BP+4h    E59h  1011h   Function Return Address   (4 bytes)
+BP       E55h     0h   Previous Frame Address    (4 bytes)
+---------------------------main---------------------------
+BP+8h    E4Dh     ??   Return object             (8 bytes)
+BP+4h    E49h     ??   Function Return Address   (4 bytes)
+BP       E45h   E55h   Previous Frame Address    (4 bytes)
+BP-8h    E3Dh     ??   result                    (8 bytes)
+--------------------------ready---------------------------
+BP+8h    E34h     ??   Return object             (9 bytes)
+BP+4h    E30h   25Ah   Function Return Address   (4 bytes)
+BP       E2Ch   E45h   Previous Frame Address    (4 bytes)
+BP-8h    E24h     ??   temp                      (8 bytes)
+--------------------------gcd-----------------------------
+BP+12h   E1Eh     ??   Return object             (6 bytes)
+BP+Ah    E15h     64   x                         (9 bytes)
+BP+8h    E0Fh     48   y                         (6 bytes)
+BP+4h    E0Bh     ??   Function Return Address   (4 bytes)
+BP       E07h   E45h   Previous Frame Address    (4 bytes)
+--------------------------gcd1----------------------------
+BPh       5BAh   Return object             (6 bytes)
+BPh        16   x                         (9 bytes)
+BPh        48   y                         (6 bytes)
+BPh         ??   Function Return Address   (4 bytes)
+BP          E06h   Previous Frame Address    (4 bytes)
+--------------------------gcd2----------------------------
+BPh    DD5h     3    Return object             (6 bytes)
+BPh   DE1h     3    x                         (8 bytes)
+BPh   DDBh     0    y                         (6 bytes)
+BPh    DD1h     ??   Function Return Address   (4 bytes)
+BP & SP  DCDh   DE8h   Previous Frame Address    (4 bytes)
+----------------------------------------------------------
