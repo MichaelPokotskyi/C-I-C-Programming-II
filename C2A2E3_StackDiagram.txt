@@ -37,6 +37,6 @@ BP       DEAh   E07h   Previous Frame Address    (4 bytes)
 BP+17h   DE4h     ??   Return object             (6 bytes)
 BP+Eh    DDBh     16   x                         (9 bytes)
 BP+8h    DD5h      0   y                         (6 bytes)
-BP+4h    DD1h   DEEh   Function Return Address   (4 bytes)
+BP+4h    DD1h   5BAh   Function Return Address   (4 bytes)
 BP & SP  DCDh   DEAh   Previous Frame Address    (4 bytes)
 ----------------------------------------------------------
