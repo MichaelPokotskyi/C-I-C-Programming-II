@@ -13,7 +13,7 @@
 // technique, proper formatting/style, or meet the requirements your code must
 // meet.  You do not need to understand the code in this file to write yours.
 //****************************************************************************
-#ifdef INSTRUCTOR_FILE
+//#ifdef INSTRUCTOR_FILE
 //
 //#include <cstdlib>
 //#include <iostream>
