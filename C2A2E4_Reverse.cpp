@@ -42,7 +42,7 @@ int Reverse(ifstream &inFile, const int level) {
     else 
     {
         thisSeparator = Reverse(inFile, level + 1);
-        if (level == 3) 
+        if (level == 3 || level == 1)
         { 
             cout.put(toupper(thisChar));
         }
