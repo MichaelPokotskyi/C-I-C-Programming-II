@@ -4,7 +4,7 @@
 // C I C++ Programming II
 // C1 170379 Raymond L. Mitchell
 // 4/5/2023
-// C2A2E6_OpenFile.cpp
+// C2A2E4_OpenFile.cpp
 // Win10
 // Visual C++ 2022, ISO C++ 17
 //

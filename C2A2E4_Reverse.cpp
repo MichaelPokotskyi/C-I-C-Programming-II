@@ -4,7 +4,7 @@
 // C I C++ Programming II
 // C1 170379 Raymond L. Mitchell
 // 4/5/2023
-// C2A2E6_Reverse.cpp
+// C2A2E4_Reverse.cpp
 // Win10
 // Visual C++ 2022, ISO C++ 17
 //
@@ -15,28 +15,41 @@
 #include <fstream>
 using namespace std;
 
+
 bool isSep(char ch) {
-    if ( isspace(ch) == 0 || ch == '.' || ch == '?' || ch == '!' || ch == ',' ||ch == ':' || ch == ';' || ch ==  EOF)
-    {
+    if (isspace(ch)) return false;
+    switch (ch) {
+    case '.':
+    case '?':
+    case '!':
+    case ',':
+    case ':':
+    case ';':
+    case EOF:
         return false;
-    }
-    else 
-    {
+    default:
         return true;
     }
  }
 
 int Reverse(ifstream &inFile, const int level) {
+    int thisSeparator;
     int thisChar = inFile.get();
-    if (isSep(thisChar))
+    if (!isSep(thisChar))
     {
         return thisChar;
     }
     else 
     {
-        int thisSeparator = Reverse(inFile, level + 1);
-        if () {}
-        else {}
-     
+        thisSeparator = Reverse(inFile, level + 1);
+        if (level == 3) 
+        { 
+            cout << toupper(thisChar);
+        }
+        else
+        { 
+            cout << thisChar; 
+        }
+        return thisSeparator;
     }
 }
