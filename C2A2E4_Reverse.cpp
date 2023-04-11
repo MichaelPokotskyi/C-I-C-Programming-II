@@ -44,11 +44,11 @@ int Reverse(ifstream &inFile, const int level) {
         thisSeparator = Reverse(inFile, level + 1);
         if (level == 3) 
         { 
-            cout << toupper(thisChar);
+            cout.put(toupper(thisChar));
         }
         else
         { 
-            cout << thisChar; 
+            cout.put(char(thisChar));
         }
         return thisSeparator;
     }
