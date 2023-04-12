@@ -11,14 +11,20 @@
 // Assignment #2 C2A2E4 (C)
 // 
 
-#include <iostream>
-#include <fstream>
+#include<iostream>
+#include<fstream>
+const int LASTCHAR = 1;
+const int NEXTTOLASTCHAR = 3;
 using namespace std;
 
 
 bool isSep(char ch) {
-    if (isspace(ch)) return false;
-    switch (ch) {
+    if (isspace(ch))
+    {
+        return false;
+    }
+    switch (ch) 
+    {
     case '.':
     case '?':
     case '!':
@@ -33,7 +39,6 @@ bool isSep(char ch) {
  }
 
 int Reverse(ifstream &inFile, const int level) {
-    int thisSeparator;
     int thisChar = inFile.get();
     if (!isSep(thisChar))
     {
@@ -41,10 +46,10 @@ int Reverse(ifstream &inFile, const int level) {
     }
     else 
     {
-        thisSeparator = Reverse(inFile, level + 1);
-        if (level == 3 || level == 1)
+        int thisSeparator = Reverse(inFile, level + 1);
+        if (level == NEXTTOLASTCHAR || level == LASTCHAR)
         { 
-            cout.put(toupper(thisChar));
+            cout.put((char)toupper(thisChar));
         }
         else
         { 

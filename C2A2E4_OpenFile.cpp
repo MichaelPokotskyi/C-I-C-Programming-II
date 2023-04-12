@@ -9,7 +9,7 @@
 // Visual C++ 2022, ISO C++ 17
 //
 // Assignment #2 C2A2E4 (C)
-//
+// 
 
 #include <iostream>
 #include <fstream>
