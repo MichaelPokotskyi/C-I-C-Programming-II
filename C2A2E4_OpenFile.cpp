@@ -9,14 +9,15 @@
 // Visual C++ 2022, ISO C++ 17
 //
 // Assignment #2 C2A2E4 (C)
-// 
+// Opens the file named in fileName in the read-only text mode using the inFile object.
 
 #include <iostream>
 #include <fstream>
 using namespace std;
 
 void OpenFile(const char *fileName, ifstream &inFile) {
-    inFile.open(fileName, ios_base::in);
+    inFile.open(fileName);
+        // open fail test
         if (!inFile.is_open())
         {
             cerr << "Open failed: " << fileName << "\n";

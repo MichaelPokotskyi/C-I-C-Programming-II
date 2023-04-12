@@ -9,14 +9,16 @@
 // Visual C++ 2022, ISO C++ 17
 //
 // Assignment #2 C2A2E4 (C)
-// 
+// Recursively reads one character at a time from the text file in inFile until
+// a separator is read. Then any non - separator characters are displayed in reverse 
+// order with the last and next to next to last characters capitalized.
+// Finally, the separator is returned to the calling function.
 
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <fstream>
 const int LASTCHAR = 1;
 const int NEXTTOLASTCHAR = 3;
 using namespace std;
-
 
 bool isSep(char ch) {
     if (isspace(ch))
