@@ -11,13 +11,12 @@
 // Assignment #2 C2A2E4 (C)
 // Recursively reads one character at a time from the text file in inFile
 // until a separator is read. Then any non - separator characters are 
-// displayed in reverse order with the last and next to next to last 
-// characters capitalized. 
+// displayed in reverse order with the requested characters capitalized.
 
 #include <iostream>
 #include <fstream>
-const int L_CHAR = 1;
-const int NN_CHAR = 3;
+const int FIRSTCAPCH = 1;
+const int SECONDCAPCH = 3;
 using namespace std;
 
 bool isSep(char ch) {
@@ -26,7 +25,7 @@ bool isSep(char ch) {
     {
         return false;
     }
-    // separator checking list
+    // and other separators checking list
     switch (ch) 
     {
     case '.':
@@ -43,7 +42,7 @@ bool isSep(char ch) {
 }
 
 int Reverse(ifstream &inFile, const int level) {
-    int thisChar = inFile.get();
+    char thisChar = (char)inFile.get();
     // is read char are separator?
     if (!isSep(thisChar))
     {
@@ -51,15 +50,15 @@ int Reverse(ifstream &inFile, const int level) {
     }
     else 
     {
-        int thisSeparator = Reverse(inFile, level + 1);
+        char thisSeparator = (char)Reverse(inFile, level + 1);
         // identifying chars need to be capitalized
-        if (level == NN_CHAR || level == L_CHAR)
+        if (level == FIRSTCAPCH || level == SECONDCAPCH)
         { 
             cout.put((char)toupper(thisChar));
         }
         else
         { 
-            cout.put(char(thisChar));
+            cout.put(thisChar);
         }
         // separator return
         return thisSeparator;
