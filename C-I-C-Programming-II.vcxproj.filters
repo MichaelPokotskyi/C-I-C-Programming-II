@@ -92,12 +92,21 @@
     <ClCompile Include="C2A2E4_Reverse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A3E2_TestDeclarations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A3E2_main-Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">
       <Filter>Source Files</Filter>
     </Text>
     <Text Include="C2A2E3_StackDiagram.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="C2A3E1_Sentences.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
