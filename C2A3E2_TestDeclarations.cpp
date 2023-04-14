@@ -12,14 +12,16 @@
 // Since only declarations have been requested, no return statements 
 // or test memory allocation provided.
 
-#include <cstdlib>
+#include<iostream>
+using namespace std;
 const int NELEMENTS = 6;
 
 void TestDeclarations() {
-    void **aryP[NELEMENTS] {(void**)calloc(NELEMENTS, 0)}; // 1.
+    void *aryP[NELEMENTS];                             // 1.
+    cout << *aryP << "\n";
     char *fcnA(void *p1);                                  // 2.
     int(*ppa)();                                           // 3.
-    int((*&rppa)()) = ppa;                                 // 4.
-    ppa = (int(*)())(*aryP);                               // 5.
+    int(*&rppa)() = ppa;                                   // 4.
+    ppa = (int(*)())*aryP;                                 // 5.
     return;
 }
