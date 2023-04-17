@@ -5,15 +5,15 @@ C2 170379 Raymond L. Mitchell
 4/12/2023
 C2A3E1_Sentences.txt
 
-1. film decays to a pointer to a double.
-2. film decays to a pointer to a double.
-3. film is an array of 46 doubles.
-4. film decays to a pointer to a double.
-5. film is an array of 46 doubles.
-6. film decays to a pointer to a double.
-7. film decays to a pointer to a double.
-8. film decays to a pointer to a double.
-9. film is an array of 46 doubles.
-10. film decays to a pointer to a double.
 
-https://www.chegg.com/homework-help/questions-and-answers/c2a3e1-2-points-short-answers-program-required-place-answers-plain-text-file-named-c2a3e1s-q66804342
+
+1. film decays to a pointer to a double.
+2. film is an address of a double array element indexed [1].
+3. film is an array of 46 doubles.
+4. film is an address of double variable.
+5. film is an address of double variable.
+6. film decays to a pointer to a double.
+7. film is an address of a double array element indexed [10].
+8. film is an address of a double array element indexed x.
+9. film is an array of 46 doubles.
+10. film is an array of 46 doubles.

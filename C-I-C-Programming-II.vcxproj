@@ -46,6 +46,8 @@
     <ClCompile Include="C2A2E4_Reverse.cpp" />
     <ClCompile Include="C2A3E2_main-Driver.cpp" />
     <ClCompile Include="C2A3E2_TestDeclarations.cpp" />
+    <ClCompile Include="C2A3E3_main-Driver.c" />
+    <ClCompile Include="C2A3E3_RecordOpinions.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
