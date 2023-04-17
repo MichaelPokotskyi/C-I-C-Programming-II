@@ -10,4 +10,14 @@
 // Assignment #3 C2A3E3 (C)
 // 
 
+#include<stdio.h>
 
+#define BEST 5
+#define WORST -BEST
+#define CHOICES BEST + BEST + 1
+#define TERNINATE
+
+void RecordOpinions(void) {
+    
+    return;
+}
