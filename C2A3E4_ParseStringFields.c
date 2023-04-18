@@ -31,8 +31,8 @@ void ParseStringFields(FILE *fp) {
         while (ch != NULL) 
         {
             int count = 0;
-            // "isspace" whitespace or terminator
-            while (isspace(ch[count] && ch[count] != '\0'))
+            // terminator or "isspace" whitespace
+            while (ch[count] != '\0' && isspace(ch[count]))
             {
                 count++;
             }
