@@ -4,16 +4,16 @@ C I C++ Programming II
 C2 170379 Raymond L. Mitchell
 4/12/2023
 C2A3E1_Sentences.txt
-
-
+Separate thank you for giving more examples
+for this excercise.
 
 1. film decays to a pointer to a double.
-2. film is an address of a double array element indexed [1].
+2. film decays to a pointer to a double.
 3. film is an array of 46 doubles.
-4. film is an address of double variable.
-5. film is an address of double variable.
+4. film decays to a pointer to a double.
+5. film is an array of 46 doubles.
 6. film decays to a pointer to a double.
-7. film is an address of a double array element indexed [10].
-8. film is an address of a double array element indexed x.
+7. film decays to a pointer to a double.
+8. film decays to a pointer to a double.
 9. film is an array of 46 doubles.
-10. film is an array of 46 doubles.
+10. film decays to a pointer to a double.
