@@ -26,13 +26,13 @@ void ParseStringFields(FILE *fp) {
     // line at a time from file
     while (fgets(buf, BUF_SIZE, fp) != NULL)
     {
-        //each line
+        //proceed each line
         char *ch = strtok(buf, del);
         while (ch != NULL) 
         {
             int count = 0;
-            // terminator or "isspace" whitespace
-            while (ch[count] != '\0' && isspace(ch[count])) 
+            // "isspace" whitespace or terminator
+            while (isspace(ch[count] && ch[count] != '\0'))
             {
                 count++;
             }
