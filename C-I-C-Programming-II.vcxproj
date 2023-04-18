@@ -48,6 +48,9 @@
     <ClCompile Include="C2A3E2_TestDeclarations.cpp" />
     <ClCompile Include="C2A3E3_main-Driver.c" />
     <ClCompile Include="C2A3E3_RecordOpinions.c" />
+    <ClCompile Include="C2A3E4_main-Driver.c" />
+    <ClCompile Include="C2A3E4_OpenFile.c" />
+    <ClCompile Include="C2A3E4_ParseStringFields.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
@@ -140,7 +143,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -154,7 +157,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
