@@ -21,4 +21,3 @@ const int DIM3 = 8;
 // the four previous dimension size variables – not as a literal numeric value.
 const int NELEM = DIM0 * DIM1 * DIM2 * DIM3;
 
-void RandomizeArray(float testArray[1][DIM0][DIM1][DIM2][DIM3]);
