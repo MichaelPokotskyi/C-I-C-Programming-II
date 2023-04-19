@@ -1,4 +1,4 @@
-1//
+//
 // Michael Pokotskyi U09662201
 // pokotskyi.m@gmail.com
 // C I C++ Programming II
@@ -10,4 +10,10 @@
 // 
 // Assignment #4 C2A4E1 (C)
 
+#include "C2A4E1_ArraySize.h"
+
 // void ComputeAverages(--Three parameters; see the parameter description below--)
+//void ComputeAverages(float testArray[][DIM1][DIM2][DIM3][DIM4], float* nestedAvg, float* linearAvg) {
+
+    //return;
+//}

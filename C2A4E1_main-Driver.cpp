@@ -32,7 +32,12 @@ const int MINIMUM = MIDPOINT - MAX_DEVIATION;
 
 void WorkerFunction(float *nestedAvg, float *linearAvg);
 
-int main()
+int main() 
+{
+    float nestedAvg = 123456e16F, linearAvg = -678421e2F;
+    WorkerFunction(&nestedAvg, &linearAvg);
+}
+/*
 {
 #ifdef DEBUG
    float greatestPositiveDeviation = 0, greatestNegativeDeviation = 0;
@@ -88,5 +93,5 @@ int main()
 #endif
    return EXIT_SUCCESS;
 }
-
+*/
 #endif
