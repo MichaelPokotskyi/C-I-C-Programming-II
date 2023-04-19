@@ -15,7 +15,7 @@
 const int DIM0 = 10;
 const int DIM1 = 7;
 const int DIM2 = 6;
-const int DIM3 = 8;
+const int DIM3 = 256; // 107 520 TOTAL
 
 // The 5th represents the array’s total element count. Its value must be expressed only in terms of
 // the four previous dimension size variables – not as a literal numeric value.
