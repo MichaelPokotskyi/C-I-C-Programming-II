@@ -24,6 +24,9 @@
     <ClInclude Include="C2A2E1_CountBitsM.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A4E1_ArraySize.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -111,6 +114,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C2A3E4_ParseStringFields.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A4E1_ComputeAverages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A4E1_main-Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A4E1_RandomizeArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A4E1_WorkerFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

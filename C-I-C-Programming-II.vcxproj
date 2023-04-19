@@ -22,6 +22,7 @@
     <ClInclude Include="C2A1E1_Macros.h" />
     <ClInclude Include="C2A1E7_Employee.h" />
     <ClInclude Include="C2A2E1_CountBitsM.h" />
+    <ClInclude Include="C2A4E1_ArraySize.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c" />
@@ -51,6 +52,10 @@
     <ClCompile Include="C2A3E4_main-Driver.c" />
     <ClCompile Include="C2A3E4_OpenFile.c" />
     <ClCompile Include="C2A3E4_ParseStringFields.c" />
+    <ClCompile Include="C2A4E1_ComputeAverages.cpp" />
+    <ClCompile Include="C2A4E1_main-Driver.cpp" />
+    <ClCompile Include="C2A4E1_RandomizeArray.cpp" />
+    <ClCompile Include="C2A4E1_WorkerFunction.cpp" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
