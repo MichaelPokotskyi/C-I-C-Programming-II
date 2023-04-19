@@ -10,3 +10,4 @@
 // 
 // Assignment #4 C2A4E1 (C)
 
+// void ComputeAverages(--Three parameters; see the parameter description below--)

@@ -10,3 +10,4 @@
 // 
 // Assignment #4 C2A4E1 (C)
 
+// void RandomizeArray(--One parameter; see the parameter description below--)

@@ -9,3 +9,8 @@
 // Visual C++ 2022, ISO C17
 // 
 // Assignment #4 C2A4E1 (C)
+
+void WorkerFunction(float* nestedAvg, float* linearAvg) {
+
+    return;
+}
