@@ -4,19 +4,18 @@
 // C I C++ Programming II
 // C1 170379 Raymond L. Mitchell
 // 4/18/2023
-// C2A2E1_RandomizeArray.cpp
+// C2A4E1_RandomizeArray.cpp
 // Win10
 // Visual C++ 2022, ISO C17
 // 
 // Assignment #4 C2A4E1 (C)
 // Seeds the random generator and initializes each element of the 4D array
 
+// rand required iostream
 #include <iostream>
 #include "C2A4E1_ArraySize.h"
 
 void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]) {
-    // 
-    srand((unsigned)time(NULL));
     for (int ix0 = 0; ix0 < DIM0; ++ix0)
     {
         for (int ix1 = 0; ix1 < DIM1; ++ix1)
@@ -25,7 +24,7 @@ void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]) {
             {
                 for (int ix3 = 0; ix3 < DIM3; ++ix3)
                 {
-                    // assigning random value to each acessed element
+                    // assigning random value to each accessed element
                     testArray[ix0][ix1][ix2][ix3] = (float)rand();
                 }
             }
