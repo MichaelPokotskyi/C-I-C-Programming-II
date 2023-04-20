@@ -22,7 +22,7 @@ const int DIM3 = 8;
 // TOTAL 4D array elements quantity
 const int NELEM = DIM0 * DIM1 * DIM2 * DIM3;
 // Function prototypes
-void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]);
-void ComputeAverages(float(*testArray)[DIM1][DIM2][DIM3],
+void RandomizeArray(float (*testArray)[DIM1][DIM2][DIM3]);
+void ComputeAverages(float (*testArray)[DIM1][DIM2][DIM3],
     float *nestedAvg, float *linearAvg);
 #endif // C2A4E1_ARRAYSIZE_H

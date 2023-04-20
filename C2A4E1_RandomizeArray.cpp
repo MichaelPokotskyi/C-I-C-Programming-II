@@ -14,7 +14,7 @@
 #include <cstdlib>
 #include "C2A4E1_ArraySize.h"
 
-void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]) {
+void RandomizeArray(float (*testArray)[DIM1][DIM2][DIM3]) {
     for (int ix0 = 0; ix0 < DIM0; ++ix0)
     {
         for (int ix1 = 0; ix1 < DIM1; ++ix1)
