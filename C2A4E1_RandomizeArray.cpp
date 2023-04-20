@@ -14,18 +14,19 @@
 #include <iostream>
 #include "C2A4E1_ArraySize.h"
 
-// void RandomizeArray(--One parameter; see the parameter description below--)
 void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]) {
+    // 
     srand((unsigned)time(NULL));
-    for (int i = 0; i < DIM0; ++i)
+    for (int ix0 = 0; ix0 < DIM0; ++ix0)
     {
-        for (int j = 0; j < DIM1; ++j)
+        for (int ix1 = 0; ix1 < DIM1; ++ix1)
         {
-            for (int k = 0; k < DIM2; ++k)
+            for (int ix2 = 0; ix2 < DIM2; ++ix2)
             {
-                for (int l = 0; l < DIM3; ++l)
+                for (int ix3 = 0; ix3 < DIM3; ++ix3)
                 {
-                    testArray[i][j][k][l] = (float)rand();
+                    // assigning random value to each acessed element
+                    testArray[ix0][ix1][ix2][ix3] = (float)rand();
                 }
             }
         }

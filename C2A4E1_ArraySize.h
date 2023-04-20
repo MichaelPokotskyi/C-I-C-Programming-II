@@ -14,13 +14,13 @@
 // Include guard to avoid multiple includes
 #ifndef C2A4E1_ARRAYSIZE_H
 #define C2A4E1_ARRAYSIZE_H
-// The first four represent a 4D array’s dimension lengths, which
-// left-to-right must be 10, 7, 6, and 8
+// The first four variables represent a 4D array’s dimension lengths,
+// which left-to-right must be 10, 7, 6, and 8
 const int DIM0 = 10;
 const int DIM1 = 7;
 const int DIM2 = 6;
 const int DIM3 = 8;
-// TOTAL 4D array values
+// TOTAL 4D array elements quantity
 const int NELEM = DIM0 * DIM1 * DIM2 * DIM3;
 // Function prototypes
 void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]);
