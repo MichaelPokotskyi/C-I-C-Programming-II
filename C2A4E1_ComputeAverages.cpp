@@ -13,7 +13,6 @@
 #include "C2A4E1_ArraySize.h"
 
  // void ComputeAverages(--Three parameters; see the parameter description below--)
-void ComputeAverages(float testArray[DIM0][DIM1][DIM2][DIM3], float* nestedAvg, float* linearAvg) {
-
+void ComputeAverages(float(*testArray)[DIM1][DIM2][DIM3], float* nestedAvg, float* linearAvg) {
 
 }
