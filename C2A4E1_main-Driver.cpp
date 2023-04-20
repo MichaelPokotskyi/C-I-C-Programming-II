@@ -30,68 +30,63 @@ const int MAX_DEVIATION = int(MIDPOINT * 0.065);
 const int MAXIMUM = MIDPOINT + MAX_DEVIATION;
 const int MINIMUM = MIDPOINT - MAX_DEVIATION;
 
-void WorkerFunction(float *nestedAvg, float *linearAvg);
+void WorkerFunction(float* nestedAvg, float* linearAvg);
 
-int main() 
+int main()
 {
+#ifdef DEBUG
+    float greatestPositiveDeviation = 0, greatestNegativeDeviation = 0;
+    time_t current, previous = time(0);
+#endif
+
     float nestedAvg = 123456e16F, linearAvg = -678421e2F;
-    WorkerFunction(&nestedAvg, &linearAvg);
+
+#ifdef DEBUG
+    for (;;)
+    {
+        while ((current = time(0)) == previous)
+            ;
+        previous = current;
+#endif
+        WorkerFunction(&nestedAvg, &linearAvg);
+        cout << "The average of all elements using nested loops is "
+            << nestedAvg << '\n';
+        cout << "The average of all elements using linear access is "
+            << linearAvg << '\n';
+
+#ifdef DEBUG
+        if (nestedAvg > MIDPOINT)
+        {
+            float deviation = nestedAvg - MIDPOINT;
+            if (deviation > greatestPositiveDeviation)
+                greatestPositiveDeviation = deviation;
+        }
+        else if (nestedAvg < MIDPOINT)
+        {
+            float deviation = MIDPOINT - nestedAvg;
+            if (deviation > greatestNegativeDeviation)
+                greatestNegativeDeviation = deviation;
+        }
+        cout << "Allowed deviation: +-" << MAX_DEVIATION << "\n";
+        cout << "Greatest Deviations: " << -greatestNegativeDeviation << "; +" <<
+            greatestPositiveDeviation << "\n";
+#endif
+
+        if (nestedAvg != linearAvg)
+            cout << "Failure: Averages don't match.\n";
+        else
+        {
+            if (nestedAvg < MINIMUM || nestedAvg > MAXIMUM)
+                cout << "Failure: Averages match but their values "
+                "are out of the expected range.\n";
+            else
+                cout << "*** Averages match and their values "
+                "are within the expected range.\n";
+        }
+#ifdef DEBUG
+    }
+#endif
+    return EXIT_SUCCESS;
 }
-/*
-{
-#ifdef DEBUG
-   float greatestPositiveDeviation = 0, greatestNegativeDeviation = 0;
-   time_t current, previous = time(0);
-#endif
 
-   float nestedAvg = 123456e16F, linearAvg = -678421e2F;
-
-#ifdef DEBUG
-   for (;;)
-   {
-      while ((current = time(0)) == previous)
-         ;
-      previous = current;
-#endif
-      WorkerFunction(&nestedAvg, &linearAvg);
-      cout << "The average of all elements using nested loops is "
-         << nestedAvg << '\n';
-      cout << "The average of all elements using linear access is "
-         << linearAvg << '\n';
-
-#ifdef DEBUG
-      if (nestedAvg > MIDPOINT)
-      {
-         float deviation = nestedAvg - MIDPOINT;
-         if (deviation > greatestPositiveDeviation)
-            greatestPositiveDeviation = deviation;
-      }
-      else if (nestedAvg < MIDPOINT)
-      {
-         float deviation = MIDPOINT - nestedAvg;
-         if (deviation > greatestNegativeDeviation)
-            greatestNegativeDeviation = deviation;
-      }
-      cout << "Allowed deviation: +-" << MAX_DEVIATION << "\n";
-      cout << "Greatest Deviations: " << -greatestNegativeDeviation << "; +" <<
-         greatestPositiveDeviation << "\n";
-#endif
-
-      if (nestedAvg != linearAvg)
-         cout << "Failure: Averages don't match.\n";
-      else
-      {
-         if (nestedAvg < MINIMUM || nestedAvg > MAXIMUM)
-            cout << "Failure: Averages match but their values "
-            "are out of the expected range.\n";
-         else
-            cout << "*** Averages match and their values "
-            "are within the expected range.\n";
-      }
-#ifdef DEBUG
-   }
-#endif
-   return EXIT_SUCCESS;
-}
-*/
 #endif

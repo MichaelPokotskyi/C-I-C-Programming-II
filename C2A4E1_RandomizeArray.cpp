@@ -9,9 +9,9 @@
 // Visual C++ 2022, ISO C17
 // 
 // Assignment #4 C2A4E1 (C)
+// Seeds the random generator and initializes each element of the 4D array
 
 #include <iostream>
-
 #include "C2A4E1_ArraySize.h"
 
 // void RandomizeArray(--One parameter; see the parameter description below--)
