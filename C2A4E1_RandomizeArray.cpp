@@ -11,8 +11,7 @@
 // Assignment #4 C2A4E1 (C)
 // Seeds the random generator and initializes each element of the 4D array
 
-// rand required iostream
-#include <iostream>
+#include <cstdlib>
 #include "C2A4E1_ArraySize.h"
 
 void RandomizeArray(float(*testArray)[DIM1][DIM2][DIM3]) {

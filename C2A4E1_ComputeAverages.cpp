@@ -13,9 +13,9 @@
 
 #include "C2A4E1_ArraySize.h"
 
-void ComputeAverages(float(*testArray)[DIM1][DIM2][DIM3], 
+void ComputeAverages(float (*testArray)[DIM1][DIM2][DIM3], 
     float *nestedAvg, float *linearAvg) {
-    float t0{ 0 }, t1{ 0 };
+    float t0 = 0, t1 = 0;
     // nested average version
     for (int ix0 = 0; ix0 < DIM0; ++ix0)
     {
@@ -33,12 +33,11 @@ void ComputeAverages(float(*testArray)[DIM1][DIM2][DIM3],
     }
     *nestedAvg = t0 / NELEM;
     // linear aveerage version
-    for (float *ptr = (float*)testArray;
-        ptr < (float*)testArray + DIM0 * DIM1 * DIM2 * DIM3; ++ptr)
+    for (float *ptr = (float *)testArray;
+        ptr < (float *)testArray + DIM0 * DIM1 * DIM2 * DIM3; ++ptr)
     {
         // update T0 with each copied array element
         t1 += *ptr;
     }
-    // calculate the average using the linear method by pointer
     *linearAvg = t1 / NELEM;
 }
