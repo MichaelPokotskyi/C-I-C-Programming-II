@@ -27,6 +27,9 @@
     <ClInclude Include="C2A4E1_ArraySize.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A4E2_StorageMap5D.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -126,6 +129,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C2A4E1_WorkerFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A4E2_main-Driver.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
