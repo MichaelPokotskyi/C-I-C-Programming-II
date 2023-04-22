@@ -30,4 +30,4 @@ static float *xa[DIM2] = {wa, wb, wc, wd},
 // next level pointer of pointers arrays
 static float **ya[DIM1] = {xa, xb, xc}, **yb[DIM1] = {xd, xe, xf};
 // next level pointer of pointers of pointers arrays
-extern float ***pointerArray4D[DIM0] = {ya, yb};
+float ***pointerArray4D[DIM0] = {ya, yb};
