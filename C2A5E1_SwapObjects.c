@@ -8,7 +8,7 @@
 //// Win10
 //// Visual C++ 2022, ISO C17
 ////
-//// Assignment #3 C2A5E1 (C)
+//// Assignment #5 C2A5E1 (C)
 //// SwapObjects dynamically allocates memory size and swapping two pointers
 //
 //#include <stdio.h>
@@ -25,7 +25,7 @@
 //    }
 //    // pa to temp
 //    memcpy(temp, pa, size);
-//    // pa to pb
+//    // pb to pa
 //    memcpy(pa, pb, size);
 //    // temp to pb
 //    memcpy(pb, temp, size);
