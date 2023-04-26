@@ -17,7 +17,25 @@
 #include "C2A5E2_Type-Driver.h"
 
 Type** Create2D(size_t rows, size_t cols) {
-    Type* p0, ** p1, **p2, ** end;
+
+    Type *p0, **p1, **p2, **end;
+    size_t ttl = (rows * cols) * sizeof(Type);
+    p1 = malloc(ttl * sizeof(Type*));
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++) 
+        {
+            p1 = p2
+        }
+    }
+
+    // p1 = (Type**)p0;
+    //for (end = p1 + ) {}
+
+
+
+    /*Type *p0, **p1, **p2, **end;
     if ((p0 = malloc(rows * sizeof(Type*))) == NULL)
     {
         fprintf(stderr, "Memory allocation failed\n");
@@ -35,6 +53,7 @@ Type** Create2D(size_t rows, size_t cols) {
     {
         *p2 = (Type*)p0;
     }
+    return p1;*/
     return p1;
 }
 
