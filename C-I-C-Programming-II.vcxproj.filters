@@ -31,9 +31,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="C2A5E2_Type-Driver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\ARC_M\C2_170379_U09662201_Requirements\Assignment 5\C2A5E2_Type-Driver.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\ARC_M\C2_170379_U09662201_Requirements\Assignment 5\C2A5E2_Type-Driver.h" />
     <ClInclude Include="C2A1E1_Macros.h" />
     <ClInclude Include="C2A1E7_Employee.h" />
     <ClInclude Include="C2A2E1_CountBitsM.h" />
