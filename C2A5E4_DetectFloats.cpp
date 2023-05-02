@@ -37,11 +37,12 @@
 StatusCode DetectFloats(const char* chPtr) {
     enum 
     { 
-        START, PREFIX_START, PREFIX, NO_WHOLE, WHOLE, FRACT, BINARY_EX, SIGN, NUM, FLOAT_SUFF, LONG_D 
+        START, PREFIX_START, PREFIX, NO_WHOLE, WHOLE, 
+        FRACT, BINARY_EX, SIGN, NUM, FLOAT_SUFF, LONG_D
     }
     state = START;
     //variable to step through each character in the string as it goes//from state to stateint 
-    int el = 0;
+    size_t el = 0;
     for (;;)
     {
         //determines what type of (OFL) the string is, if the string is a OFLswitch
@@ -51,7 +52,7 @@ StatusCode DetectFloats(const char* chPtr) {
             switch (chPtr[el])
             { 
             case '0':
-            state = PREFIX_START; 
+                state = PREFIX_START; 
             break;
             default : return FAIL;
             }
@@ -60,7 +61,7 @@ StatusCode DetectFloats(const char* chPtr) {
             switch (chPtr[el])
             {
             case 'o': case 'O':
-            state = PREFIX; 
+                state = PREFIX; 
             break;
             default : return FAIL;
             }
@@ -68,7 +69,8 @@ StatusCode DetectFloats(const char* chPtr) {
         case PREFIX:
             switch (chPtr[el])
             {
-            case '.':state = NO_WHOLE;
+            case '.': 
+                state = NO_WHOLE;
             break; 
             case '0': case '1': case '2': case '3': 
             case '4':case '5': case '6': case '7':
@@ -79,7 +81,15 @@ StatusCode DetectFloats(const char* chPtr) {
         break;
         case NO_WHOLE:
             switch (chPtr[el])
-    
+                switch (chPtr[el])
+                {
+                case '0': case '1': case '2': case '3':
+                case '4':case '5': case '6': case '7':
+                    state = FRACT;
+                    break;
+                default: return FAIL;
+                }
+
       
     } // first switch curly brace
 
