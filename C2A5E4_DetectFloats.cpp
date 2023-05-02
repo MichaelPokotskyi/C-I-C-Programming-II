@@ -9,79 +9,168 @@
 // Visual C++ 2022, ISO C++ 17
 //
 // Assignment #5 C2A5E4 (C)
-//
+// 
 
 #include "C2A5E4_StatusCode-Driver.h"
-//
-//#include <iostream>
-//#include <fstream>
-//using namespace std;
-//
-//StatusCode DetectFloats(const char *chPtr) {
-//    StatusCode t = FAIL;
-//    int length = sizeof(chPtr);
-//    for (int pos = 0; length > 0; pos++, length--)
-//    {
-//        switch (*chPtr)
-//        {
-//        case '0':
-//            switch (*chPtr);
-//        }
-//        
-//    }
-//    // cout << chPtr << "\n";*/
-//    // cout << sizeof(chPtr) - 1;
-//    return t;
-//}
 
-StatusCode DetectFloats(const char* chPtr) {
-    enum 
-    { 
-        START, PREFIX_START, PREFIX, NO_WHOLE, WHOLE, FRACT, BINARY_EX, SIGN, NUM, FLOAT_SUFF, LONG_D 
-    }
+StatusCode DetectFloats(const char* chPtr){
+    enum
+    {
+        START, PREFIX_START, PREFIX, NO_WHOLE, WHOLE,
+        FRACT, P_SIGN, SIGN, DIGIT, SUFFIX, LONG_DOUBLE
+    } 
+    // initial state
     state = START;
-    //variable to step through each character in the string as it goes//from state to stateint 
-    int el = 0;
+    // initial char position
+    size_t pos = 0;
     for (;;)
     {
-        //determines what type of (OFL) the string is, if the string is a OFLswitch
-        switch (state) 
+        switch (state)
         {
         case START:
-            switch (chPtr[el])
-            { 
+            switch (chPtr[pos])
+            {
             case '0':
-            state = PREFIX_START; 
-            break;
-            default : return FAIL;
+                state = PREFIX_START;
+                break;
+            default:
+                return FAIL;
             }
-        break; 
+            break;
         case PREFIX_START:
-            switch (chPtr[el])
+            switch (chPtr[pos])
             {
-            case 'o': case 'O':
-            state = PREFIX; 
+            case 'x': case 'X':
+                state = PREFIX;
+                break;
+            default:
+                return FAIL;
+            }
             break;
-            default : return FAIL;
-            }
-        break;
         case PREFIX:
-            switch (chPtr[el])
+            switch (chPtr[pos])
             {
-            case '.':state = NO_WHOLE;
-            break; 
-            case '0': case '1': case '2': case '3': 
-            case '4':case '5': case '6': case '7':
+            case '.':
+                state = NO_WHOLE;
+                break;
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9': case 'a': case 'A':
+            case 'b': case 'B': case 'c': case 'C':
+            case 'd': case 'D': case 'e': case 'E':
+            case 'f': case 'F':
                 state = WHOLE;
-                break; 
-            default : return FAIL;
+                break;
+            default:
+                return FAIL;
             }
-        break;
+            break;
         case NO_WHOLE:
-            switch (chPtr[el])
-    
-      
-    } // first switch curly brace
+            switch (chPtr[pos])
+            {
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9': case 'a': case 'A':
+            case 'b': case 'B': case 'c': case 'C':
+            case 'd': case 'D': case 'e': case 'E':
+            case 'f': case 'F':
+                state = FRACT;
+                break;
+            default:
+                return FAIL;
+            }
+            break;
+        case WHOLE:
+            switch (chPtr[pos])
+            {
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9': case 'a': case 'A':
+            case 'b': case 'B': case 'c': case 'C':
+            case 'd': case 'D': case 'e': case 'E':
+            case 'f': case 'F':
+                state = WHOLE;
+                break;
+            case 'p': case 'P':
+                state = P_SIGN;
+            default:
+                return FAIL;
+            }
+            break;
+        case FRACT:
+            switch (chPtr[pos])
+            {
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9': case 'a': case 'A':
+            case 'b': case 'B': case 'c': case 'C':
+            case 'd': case 'D': case 'e': case 'E':
+            case 'f': case 'F':
+                state = FRACT;
+            case 'p': case 'P':
+                state = P_SIGN;
+            default:
+                return FAIL;
+            }
+            break;
+        case P_SIGN:
+            switch (chPtr[pos])
+            {
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9': case 'a': case 'A':
+            case 'b': case 'B': case 'c': case 'C':
+            case 'd': case 'D': case 'e': case 'E':
+            case 'f': case 'F':
+                state = P_SIGN;
+                break;
+            case '+': case '-':
+                state = SIGN;
+                break;
+            default:
+                return FAIL;
+            }
+            break;
+        case SIGN:
+            switch (chPtr[pos])
+            {
+            case '0': case '1': case '2': case '3':
+            case '4': case '5': case '6': case '7':
+            case '8': case '9':
+                state = SIGN;
+                break;
+            case 'L': case 'l':
+                state = SUFFIX;
+                break;
+            case 'F': case 'f':
+                state = SUFFIX;
+                break;
+            case '\0':
+                state = SUFFIX;
+                break;
+            default:
+                return FAIL;
+            }
 
+            case SUFFIX:
+            {
+            switch (chPtr[pos])
+            case 'L': case 'l':
+                return L_DOUBLE;
+                break;
+            case 'F': case 'f':
+                return FLOAT;
+                break;
+            case '\0':
+                return DOUBLE;
+                break;
+            default:
+                return FAIL;
+                break;
+            }
+        
+        }    
+        break;
+    }       // iterating next char position
+    pos++;
 }
-
