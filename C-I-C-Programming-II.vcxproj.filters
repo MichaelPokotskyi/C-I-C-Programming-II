@@ -33,6 +33,9 @@
     <ClInclude Include="C2A5E2_Type-Driver.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A5E4_StatusCode-Driver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -153,6 +156,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C2A5E2_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A5E4_main-Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A5E4_DetectFloats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A5E4_OpenFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

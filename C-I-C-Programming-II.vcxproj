@@ -25,6 +25,7 @@
     <ClInclude Include="C2A4E1_ArraySize.h" />
     <ClInclude Include="C2A4E2_StorageMap5D.h" />
     <ClInclude Include="C2A5E2_Type-Driver.h" />
+    <ClInclude Include="C2A5E4_StatusCode-Driver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c" />
@@ -65,6 +66,9 @@
     <ClCompile Include="C2A5E1_SwapObjects.c" />
     <ClCompile Include="C2A5E2_Create2D.c" />
     <ClCompile Include="C2A5E2_main-Driver.c" />
+    <ClCompile Include="C2A5E4_DetectFloats.cpp" />
+    <ClCompile Include="C2A5E4_main-Driver.cpp" />
+    <ClCompile Include="C2A5E4_OpenFile.cpp" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
