@@ -9,15 +9,16 @@
 // Visual C++ 2022, ISO C++ 17
 //
 // Assignment #5 C2A5E4 (C)
-// 
+// Was unable to make my code work. I get the idea, but was struggled to
+// build correct structure. "Best" approach are represented.
 
 #include "C2A5E4_StatusCode-Driver.h"
 
-StatusCode DetectFloats(const char* chPtr){
+StatusCode DetectFloats(const char *chPtr){
     enum
     {
         START, PREFIX_START, PREFIX, NO_WHOLE, WHOLE,
-        FRACT, P_SIGN, SIGN, DIGIT, SUFFIX, LONG_DOUBLE
+        FRACT, P_SIGN, HEXDIGIT, SUFFIX
     } 
     // initial state
     state = START;
@@ -125,36 +126,29 @@ StatusCode DetectFloats(const char* chPtr){
                 state = P_SIGN;
                 break;
             case '+': case '-':
-                state = SIGN;
+                state = HEXDIGIT;
                 break;
             default:
                 return FAIL;
             }
             break;
-        case SIGN:
+        case HEXDIGIT:
             switch (chPtr[pos])
             {
             case '0': case '1': case '2': case '3':
             case '4': case '5': case '6': case '7':
             case '8': case '9':
-                state = SIGN;
+                state = HEXDIGIT;
                 break;
-            case 'L': case 'l':
-                state = SUFFIX;
-                break;
-            case 'F': case 'f':
-                state = SUFFIX;
-                break;
-            case '\0':
+            case 'F': case 'f': case 'L': case 'l': case '\0':
                 state = SUFFIX;
                 break;
             default:
                 return FAIL;
             }
-
-            case SUFFIX:
-            {
+         case SUFFIX:
             switch (chPtr[pos])
+            {
             case 'L': case 'l':
                 return L_DOUBLE;
                 break;
@@ -168,9 +162,9 @@ StatusCode DetectFloats(const char* chPtr){
                 return FAIL;
                 break;
             }
-        
         }    
         break;
-    }       // iterating next char position
-    pos++;
+        // iterating next char position
+        pos++;
+    }       
 }

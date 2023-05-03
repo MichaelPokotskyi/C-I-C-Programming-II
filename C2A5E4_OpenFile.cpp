@@ -16,7 +16,7 @@
 using namespace std;
 
 void OpenFile(const char *fileName, ifstream &inFile) {
-    inFile.open(fileName, std::ifstream::in);
+    inFile.open(fileName);
     // open fail test
     if (!inFile.is_open())
     {
