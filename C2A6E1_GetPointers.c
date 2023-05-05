@@ -8,7 +8,7 @@
 //// Win10
 //// Visual C++ 2022, ISO C17
 ////
-//// Assignment #1 C2A6E1 (C)
+//// Assignment #6 C2A6E1 (C)
 //// Two pointers to standard library functions declared and returned.
 //
 //#include <stdio.h>
