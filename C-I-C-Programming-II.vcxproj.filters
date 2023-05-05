@@ -167,6 +167,12 @@
     <ClCompile Include="C2A5E4_OpenFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A6E1_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A6E1_GetPointers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">
