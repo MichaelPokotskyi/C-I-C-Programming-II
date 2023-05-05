@@ -10,3 +10,9 @@
 //
 // Assignment #6 C2A6E3 (C)
 
+#include <stdio.h>
+
+int Compare(const void* elemA, const void* elemB) {}
+void SortStudents(const char* studentList[], size_t studentCount) {}
+void DisplayClassStatus(const char* registrants[], size_t registrantCount,
+    const char* attendees[], size_t attendeeCount) {}
