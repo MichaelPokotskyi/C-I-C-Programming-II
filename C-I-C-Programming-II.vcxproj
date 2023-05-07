@@ -74,6 +74,8 @@
     <ClCompile Include="C2A6E2_GetValues.cpp" />
     <ClCompile Include="C2A6E2_main-Driver.cpp" />
     <ClCompile Include="C2A6E2_SortValues.cpp" />
+    <ClCompile Include="C2A6E3_DisplayClassStatus.c" />
+    <ClCompile Include="C2A6E3_main-Driver.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>

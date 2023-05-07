@@ -182,6 +182,12 @@
     <ClCompile Include="C2A6E2_SortValues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A6E3_DisplayClassStatus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A6E3_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">
