@@ -36,6 +36,9 @@
     <ClInclude Include="C2A5E4_StatusCode-Driver.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A6E4_List-Driver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -186,6 +189,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C2A6E3_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A6E4_List.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A6E4_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A6E4_OpenFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

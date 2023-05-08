@@ -26,6 +26,7 @@
     <ClInclude Include="C2A4E2_StorageMap5D.h" />
     <ClInclude Include="C2A5E2_Type-Driver.h" />
     <ClInclude Include="C2A5E4_StatusCode-Driver.h" />
+    <ClInclude Include="C2A6E4_List-Driver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c" />
@@ -76,6 +77,9 @@
     <ClCompile Include="C2A6E2_SortValues.cpp" />
     <ClCompile Include="C2A6E3_DisplayClassStatus.c" />
     <ClCompile Include="C2A6E3_main-Driver.c" />
+    <ClCompile Include="C2A6E4_List.c" />
+    <ClCompile Include="C2A6E4_main-Driver.c" />
+    <ClCompile Include="C2A6E4_OpenFile.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
