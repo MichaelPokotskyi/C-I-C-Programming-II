@@ -21,25 +21,25 @@
 #define DELIM " \n"
 #define TERM 1
 
-List* CreateList(FILE* fp) {
+List *CreateList(FILE *fp) {
     char buf[BUF_SIZE];
-    List* head = NULL;
+    List *head = NULL;
     // line at a time from file
     while (fgets(buf, BUF_SIZE, fp) != NULL)
     {
-
-        for (char* token = strtok(buf, DELIM); token != NULL;
+        for (char *token = strtok(buf, DELIM); token != NULL;
             token = strtok(NULL, DELIM))
         {
             while (isspace(*token))
             {
                 ++token;
             }
-            // found counter
+            // found counter, reset each loop iteration
             size_t found = 0;
-            for (List* count_token = head; count_token != 0; count_token = count_token -> next)
+            for (List *count_token = head; count_token != 0; 
+                count_token = count_token->next)
             {
-                // comparing tokens, updating counter
+                // comparing tokens, updating counter and found flag
                 if (!strcmp(token, count_token->str)) 
                 {
                     count_token->count++;
@@ -53,22 +53,23 @@ List* CreateList(FILE* fp) {
                 // memory allocation test w message
                 if ((new_node = (List *)malloc(sizeof(List))) == NULL)
                 {
-                    printf("New NODE memory allocation fail!\n");
+                    fprintf(stderr, "New NODE memory allocation fail!\n");
                     exit(EXIT_FAILURE);
                 }
                 // token size are taken
                 size_t token_size = strlen(token);
                 // memory allocation test w message
-                if ((new_node->str = (char*)malloc(sizeof(token[0])
+                if ((new_node->str = (char *)malloc(sizeof(token[0])
                     * token_size + TERM)) == NULL) // !!
                 {
-                    printf("STRING in NODE memory allocation fail!\n");
+                    fprintf(stderr, "STRING in NODE memory allocation fail!\n");
                     exit(EXIT_FAILURE);
                 }
                 // copying token to allocated memory
-                memcpy((void *)new_node->str, (void *)token, token_size + TERM); //!
+                memcpy((void *)new_node->str, (void *)token, 
+                    token_size + TERM); //!!
                 new_node->count = TERM; // !!
-                // push node to List
+                // pushing node to List
                 new_node->next = head;
                 head = new_node;
             }
@@ -78,23 +79,24 @@ List* CreateList(FILE* fp) {
 }
 
 List *PrintList(const List *head) {
-    // building formatted ouput table
+    // building formatted output table
     for (const List *table = head; table != NULL; table = table->next)
     {
         printf("%-15s%4d ea\n", table->str, table->count);
     }
-    return((List*)head);
+    return((List *)head);
 }
 
 void FreeList(List *head) {
-    while (head->next != NULL) 
+    do 
     {
         // clear List
         List *clear = head->next;
         free(head->str);
         free(head);
         head = clear; 
-    }
+    } 
+    while (head->next != NULL);
     // clear head with no "NULL dereferencing" warning
     if (head != NULL) 
     {
