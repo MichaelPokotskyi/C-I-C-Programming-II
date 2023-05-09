@@ -24,8 +24,8 @@
 
 FILE *OpenFile(const char *fileName);
 List *CreateList(FILE *fp);
-// List *PrintList(const List *head);
-// void FreeList(List *head);
+List *PrintList(const List *head);
+void FreeList(List *head);
 
 int main(void)
 {
@@ -33,7 +33,7 @@ int main(void)
    List *head = CreateList(fp);
 
    fclose(fp);
-   //FreeList(PrintList(head));
+   FreeList(PrintList(head));
 
    return EXIT_SUCCESS;
 }

@@ -16,11 +16,11 @@
 
 FILE *OpenFile(const char *fileName) {
     FILE *read;
-    // open fail test
+    // open fail test w message and filename
     if ((read = freopen(fileName, "r", stdin)) == NULL)
     {
-        perror("Open failed: ", fileName, "\n");
+        printf("Open failed: %s\n", fileName);
         exit(EXIT_FAILURE);
     }
-    return read;
+    return (FILE*)read;
 }
