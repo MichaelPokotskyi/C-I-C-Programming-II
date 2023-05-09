@@ -53,7 +53,7 @@ List* CreateList(FILE* fp) {
                 // memory allocation test w message
                 if ((new_node = (List *)malloc(sizeof(List))) == NULL)
                 {
-                    printf("New NODE memory allocation fail!\n");
+                    fprintf(stderr, "New NODE memory allocation fail!\n");
                     exit(EXIT_FAILURE);
                 }
                 // token size are taken
@@ -62,7 +62,7 @@ List* CreateList(FILE* fp) {
                 if ((new_node->str = (char*)malloc(sizeof(token[0])
                     * token_size + TERM)) == NULL) // !!
                 {
-                    printf("STRING in NODE memory allocation fail!\n");
+                    fprintf(stderr, "STRING in NODE memory allocation fail!\n");
                     exit(EXIT_FAILURE);
                 }
                 // copying token to allocated memory
