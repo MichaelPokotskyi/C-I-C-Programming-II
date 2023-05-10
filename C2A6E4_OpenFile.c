@@ -17,7 +17,7 @@
 FILE *OpenFile(const char *fileName) {
     FILE *read;
     // open fail test w message and filename
-    if ((read = freopen(fileName, "r", stdin)) == NULL)
+    if ((read = fopen(fileName, "r")) == NULL)
     {
         fprintf(stderr, "Open failed: %s\n", fileName);
         exit(EXIT_FAILURE);
