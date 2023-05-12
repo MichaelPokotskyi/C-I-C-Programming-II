@@ -200,6 +200,9 @@
     <ClCompile Include="C2A6E4_OpenFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A7E1_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">

@@ -1,3 +1,13 @@
+//
+// Michael Pokotskyi U09662201
+// pokotskyi.m@gmail.com
+// C I C++ Programming II
+// C1 170379 Raymond L. Mitchell
+// 5/10/2023
+// C2A7E1_main.c
+// Win10
+// Visual C++ 2022, ISO C17
+
 /***************************************************************************
 
    SPECIAL REQUIREMENTS FOR THIS EXERCISE ONLY:

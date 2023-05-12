@@ -80,6 +80,7 @@
     <ClCompile Include="C2A6E4_List.c" />
     <ClCompile Include="C2A6E4_main-Driver.c" />
     <ClCompile Include="C2A6E4_OpenFile.c" />
+    <ClCompile Include="C2A7E1_main.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
