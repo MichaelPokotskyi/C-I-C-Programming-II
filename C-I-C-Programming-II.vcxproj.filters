@@ -203,6 +203,21 @@
     <ClCompile Include="C2A7E1_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A7E2_ListHex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E2_main-Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E2_OpenFileBinary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E3_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E3_ReverseEndian.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">

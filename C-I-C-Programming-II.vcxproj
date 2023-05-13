@@ -81,6 +81,11 @@
     <ClCompile Include="C2A6E4_main-Driver.c" />
     <ClCompile Include="C2A6E4_OpenFile.c" />
     <ClCompile Include="C2A7E1_main.c" />
+    <ClCompile Include="C2A7E2_ListHex.cpp" />
+    <ClCompile Include="C2A7E2_main-Driver.cpp" />
+    <ClCompile Include="C2A7E2_OpenFileBinary.cpp" />
+    <ClCompile Include="C2A7E3_main-Driver.c" />
+    <ClCompile Include="C2A7E3_ReverseEndian.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
