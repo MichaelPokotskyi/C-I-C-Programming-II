@@ -19,21 +19,20 @@
 //using namespace std;
 //
 //const int WIDTH = 2;
-//const int COUNT = 1;
 //const int NUMZER0 = 0;
 //
-//void ListHex(ifstream& inFile, int bytesPerLine) {
+//void ListHex(ifstream &inFile, int bytesPerLine) {
 //    cout << hex << setfill('0');              
 //    int byte, bytesOnThisLine = NUMZER0;
 //    while ((byte = inFile.get()) != EOF)
 //    {
-//        // if not a time for a new line 
+//        // if not a time for a newline 
 //        if (bytesOnThisLine != NUMZER0) 
 //        {
 //            cout << ' ';
 //        }
 //        cout << setw(WIDTH) << byte;
-//        // if time for new line
+//        // if time for newline
 //        if (++bytesOnThisLine == bytesPerLine)
 //        {
 //            // reset counter
@@ -41,7 +40,7 @@
 //            cout << '\n';
 //        }
 //    }
-//    // this statement add newline after while loop finished
+//    // this statement add newline after loop finished
 //    if (bytesOnThisLine != NUMZER0)
 //        cout << '\n';
 //}

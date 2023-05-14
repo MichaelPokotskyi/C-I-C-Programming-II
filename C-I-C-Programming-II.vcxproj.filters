@@ -39,6 +39,9 @@
     <ClInclude Include="C2A6E4_List-Driver.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="C2A7E4_Test-Driver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c">
@@ -216,6 +219,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C2A7E3_ReverseEndian.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E4_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E4_OpenTemporaryFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E4_ProcessStructures.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A7E4_ReverseEndian.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

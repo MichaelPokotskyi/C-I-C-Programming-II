@@ -27,6 +27,7 @@
     <ClInclude Include="C2A5E2_Type-Driver.h" />
     <ClInclude Include="C2A5E4_StatusCode-Driver.h" />
     <ClInclude Include="C2A6E4_List-Driver.h" />
+    <ClInclude Include="C2A7E4_Test-Driver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C2A1E1_main-Driver.c" />
@@ -86,6 +87,10 @@
     <ClCompile Include="C2A7E2_OpenFileBinary.cpp" />
     <ClCompile Include="C2A7E3_main-Driver.c" />
     <ClCompile Include="C2A7E3_ReverseEndian.c" />
+    <ClCompile Include="C2A7E4_main-Driver.c" />
+    <ClCompile Include="C2A7E4_OpenTemporaryFile.c" />
+    <ClCompile Include="C2A7E4_ProcessStructures.c" />
+    <ClCompile Include="C2A7E4_ReverseEndian.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>

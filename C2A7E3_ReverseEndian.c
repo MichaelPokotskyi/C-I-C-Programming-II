@@ -13,11 +13,11 @@
 //// endian (or vice versa) by swapping its bytes.
 //
 //#include <stdlib.h>
-//#define _ONE_ 1 // no magic numbers
+//#define ONEREP 1 // no magic numbers
 //void *ReverseEndian(void *ptr, size_t size)
 //{
 //    // swap byte by byte
-//    for (char *head = (char *)ptr, *tail = head + size - _ONE_; 
+//    for (char *head = (char *)ptr, *tail = head + size - ONEREP;
 //        tail > head; --tail, ++head)
 //    {
 //        char tmp = *head;

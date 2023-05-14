@@ -15,8 +15,8 @@
 //#include <fstream>
 //using namespace std;
 //
-//void OpenFileBinary(const char *fileName, ifstream &inFile){
-//    inFile.open(fileName, ifstream::in | ifstream::binary);
+//void OpenFileBinary(const char *fileName, ifstream &inFile) {
+//    inFile.open(fileName, ifstream::binary);
 //    // open fail test
 //    if (!inFile.is_open())
 //    {
