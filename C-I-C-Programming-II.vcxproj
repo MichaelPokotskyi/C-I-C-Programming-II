@@ -91,6 +91,9 @@
     <ClCompile Include="C2A7E4_OpenTemporaryFile.c" />
     <ClCompile Include="C2A7E4_ProcessStructures.c" />
     <ClCompile Include="C2A7E4_ReverseEndian.c" />
+    <ClCompile Include="C2A8E1_main-Driver.cpp" />
+    <ClCompile Include="C2A8E1_MergeAndDisplay.cpp" />
+    <ClCompile Include="C2A8E1_OpenFiles.cpp" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
