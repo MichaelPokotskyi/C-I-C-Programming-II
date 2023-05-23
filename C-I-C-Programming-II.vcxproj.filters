@@ -242,6 +242,15 @@
     <ClCompile Include="C2A8E1_OpenFiles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C2A8E2_DisplayModifiedSingleReals.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A8E2_main-Driver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C2A8E2_OpenFileBinary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C2A1E0_Quiz.txt">

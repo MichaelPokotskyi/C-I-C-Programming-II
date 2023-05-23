@@ -94,6 +94,9 @@
     <ClCompile Include="C2A8E1_main-Driver.cpp" />
     <ClCompile Include="C2A8E1_MergeAndDisplay.cpp" />
     <ClCompile Include="C2A8E1_OpenFiles.cpp" />
+    <ClCompile Include="C2A8E2_DisplayModifiedSingleReals.c" />
+    <ClCompile Include="C2A8E2_main-Driver.c" />
+    <ClCompile Include="C2A8E2_OpenFileBinary.c" />
     <ClCompile Include="__TEST_Source_C++.cpp" />
     <ClCompile Include="__TEST_Source_C.c" />
   </ItemGroup>
